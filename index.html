@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paritala Srinivasarao | MERN Full Stack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body{font-family:'Inter',sans-serif;background:#f8fafc;color:#0f172a;cursor:none;overflow-x:hidden}
+.card{background:white;border:1px solid #e2e8f0;border-radius:16px;transition:all 0.3s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,0,0,0.06)}
+.tag{background:#f1f5f9;border:1px solid #e2e8f0;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:500}
+
+/* CURSOR */
+#cursor-dot{width:8px;height:8px;background:#2563eb;position:fixed;top:0;left:0;border-radius:50%;pointer-events:none;z-index:9999}
+#cursor-ring{width:42px;height:42px;border:1.5px solid #2563eb;position:fixed;top:0;left:0;border-radius:50%;pointer-events:none;z-index:9998;transition:all 0.15s ease-out}
+body.hovering #cursor-ring{width:72px;height:72px;background:rgba(37,99,235,0.12);border-width:2px}
+
+/* NAV HOVER - BACKGROUND COLOUR MARUTUNDI */
+.nav-item{padding:8px 18px;border-radius:999px;transition:all 0.25s ease;display:inline-block;font-weight:500}
+.nav-item:hover{background:#0f172a!important;color:white!important;transform:translateY(-1px)}
+.nav-item.active-hover:hover{background:#2563eb!important}
+</style>
+</head>
+<body>
+<div id="cursor-dot"></div><div id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+<div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+<span class="font-extrabold text-xl tracking-tight">PS<span class="text-blue-600">.</span></span>
+<div class="hidden md:flex gap-1 text-sm text-slate-600">
+<a href="#about" class="nav-item">About</a>
+<a href="#stack" class="nav-item">Tech Stack</a>
+<a href="#projects" class="nav-item">Projects</a>
+<a href="#certs" class="nav-item">IRC Certificate</a>
+<a href="#education" class="nav-item">Education</a>
+<a href="#contact" class="nav-item">Contact</a>
+</div>
+<a href="https://github.com/srinuparitala99-jpg" target="_blank" class="bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-semibold nav-item">GitHub ↗</a>
+</div>
+</nav>
+
+<!-- HERO - CHAITANYA STYLE -->
+<section class="max-w-5xl mx-auto px-6 py-16 grid md:grid-cols-[1.25fr_0.75fr] gap-10 items-center">
+<div>
+<div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full text-[11px] font-bold tracking-wide border border-blue-100">● NXTWAVE CCBP 4.0 CERTIFIED • OPEN TO WORK</div>
+<h1 class="text-5xl md:text-[4.2rem] font-extrabold leading-[0.9] mt-6 tracking-tight">Paritala<br><span class="text-slate-400">Srinivasarao</span><br>MERN Developer</h1>
+<p class="mt-6 text-slate-600 text-[17px] leading-relaxed max-w-xl">I'm a MERN Full Stack Developer from NxtWave CCBP 4.0. I build fast, responsive, and scalable web apps using <b>React, Node.js, Express, MongoDB, SQL & Python</b>. Based in Hyderabad, passionate about clean code.</p>
+<div class="mt-8 flex gap-3">
+<a href="#projects" class="bg-slate-900 text-white px-7 py-3 rounded-full font-semibold text-sm nav-item">View Projects →</a>
+<a href="https://www.linkedin.com/in/srinivasarao-paritala" target="_blank" class="card px-7 py-3 font-semibold text-sm nav-item">LinkedIn ↗</a>
+</div>
+<div class="mt-10 flex gap-10 text-sm">
+<div><p class="text-2xl font-bold">24+</p><p class="text-slate-500">Assignments</p></div>
+<div><p class="text-2xl font-bold">600+</p><p class="text-slate-500">Coding Hours</p></div>
+<div><p class="text-2xl font-bold">MHI0R1EYT8</p><p class="text-slate-500">Certified ID</p></div>
+</div>
+</div>
+
+<div class="card p-3">
+<img src="./profile.jpg" class="w-full h-[430px] object-cover object-top rounded-xl" alt="Paritala Srinivasarao">
+<div class="p-4">
+<p class="font-bold text-[15px]">Paritala Srinivasarao</p>
+<p class="text-sm text-slate-500">MERN Developer @ NxtWave • Hyderabad, IN</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">MongoDB</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-5xl mx-auto px-6 py-12">
+<h2 class="text-3xl font-extrabold mb-6">👨‍💻 About Me</h2>
+<div class="card p-8">
+<p class="text-slate-600 leading-relaxed">
+I am a MERN Full Stack Developer trained at <b>NxtWave CCBP 4.0 (Intensive)</b>. I completed <b>M.Com (2021-2023)</b> and <b>B.Com (2018-2021)</b> and transitioned into full stack development with strong fundamentals.<br><br>
+🔹 Focused on building end-to-end web applications<br>
+🔹 Strong in JavaScript, React, Node, Express, MongoDB, SQL, Python<br>
+🔹 Completed 24+ rigorous assignments & 600+ hours of coding<br>
+🔹 Looking for Full Stack Developer roles in Hyderabad / Remote.
+</p>
+</div>
+</section>
+
+<!-- TECH STACK -->
+<section id="stack" class="max-w-5xl mx-auto px-6 py-12">
+<h2 class="text-3xl font-extrabold mb-6">🛠️ Tech Stack</h2>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="card p-6"><h3 class="font-bold mb-4">💻 Programming</h3><div class="flex flex-wrap gap-2"><span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">HTML5</span><span class="tag">CSS3</span></div></div>
+<div class="card p-6"><h3 class="font-bold mb-4">🌐 MERN Stack</h3><div class="flex flex-wrap gap-2"><span class="tag">MongoDB</span><span class="tag">Express.js</span><span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">Tailwind CSS</span></div></div>
+<div class="card p-6"><h3 class="font-bold mb-4">🧰 Tools & Libraries</h3><div class="flex flex-wrap gap-2"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Netlify</span><span class="tag">Vercel</span></div></div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="max-w-5xl mx-auto px-6 py-12">
+<h2 class="text-3xl font-extrabold mb-6">📂 Featured Projects</h2>
+<div class="grid md:grid-cols-2 gap-6">
+<div class="card p-7">
+<div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">✅</div>
+<h3 class="font-bold text-xl mt-4">Todos Application</h3>
+<p class="text-sm text-slate-500 mt-2 leading-relaxed">Task management app with CRUD, persistent local storage, and responsive UI. Built with HTML, CSS, JavaScript.</p>
+<div class="mt-4 flex gap-2"><span class="tag">JavaScript</span><span class="tag">Local Storage</span></div>
+<a href="https://github.com/srinuparitala99-jpg" target="_blank" class="inline-block mt-5 text-sm font-semibold text-blue-600 nav-item">View Code →</a>
+</div>
+<div class="card p-7">
+<div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">🔍</div>
+<h3 class="font-bold text-xl mt-4">Wikipedia Search App</h3>
+<p class="text-sm text-slate-500 mt-2 leading-relaxed">Real-time Wikipedia search using open API, fetch API, debouncing, and dynamic rendering with clean UX.</p>
+<div class="mt-4 flex gap-2"><span class="tag">API</span><span class="tag">JavaScript</span><span class="tag">Bootstrap</span></div>
+<a href="https://github.com/srinuparitala99-jpg" target="_blank" class="inline-block mt-5 text-sm font-semibold text-blue-600 nav-item">View Code →</a>
+</div>
+</div>
+</section>
+
+<!-- IRC CERTIFICATE - PDF -->
+<section id="certs" class="max-w-5xl mx-auto px-6 py-12">
+<h2 class="text-3xl font-extrabold mb-6">🏅 Industry-Ready Certification (IRC)</h2>
+<div class="card p-0 overflow-hidden">
+<div class="grid md:grid-cols-[1.35fr_0.65fr] gap-0">
+<!-- PDF VIEWER -->
+<div class="p-3 bg-[#fdf8e8] h-[560px]">
+<iframe src="./certificate.pdf" class="w-full h-full rounded-xl border bg-white shadow-sm" title="NxtWave IRC Certificate"></iframe>
+</div>
+<!-- DETAILS -->
+<div class="p-8 bg-white flex flex-col justify-center">
+<div class="inline-flex bg-amber-50 text-amber-700 border border-amber-200 px-3 py-1 rounded-full text-[11px] font-bold">✔ VERIFIED • CCBP 4.0 INTENSIVE</div>
+<h3 class="font-extrabold text-[20px] mt-4 leading-tight">Full Stack Development with MERN Specialization</h3>
+<p class="text-sm text-slate-600 mt-3 leading-relaxed">You have successfully completed the Full Stack Development with MERN Specialization. Awarded after completing 24+ rigorous assignments and 600+ hours of coding.</p>
+
+<div class="mt-6 space-y-3 text-sm">
+<div class="flex justify-between border-b border-slate-100 pb-3"><span class="text-slate-500">Certificate ID</span><span class="font-mono font-bold text-slate-900">MHI0R1EYT8</span></div>
+<div class="flex justify-between border-b border-slate-100 pb-3"><span class="text-slate-500">Date</span><span class="font-semibold">6/5/2026</span></div>
+<div class="flex justify-between border-b border-slate-100 pb-3"><span class="text-slate-500">Name</span><span class="font-semibold">Paritala Srinivasarao</span></div>
+<div class="flex justify-between"><span class="text-slate-500">Issued By</span><span class="font-semibold">NxtWave • Rahul A, CEO</span></div>
+</div>
+
+<div class="mt-7 grid grid-cols-2 gap-3">
+<a href="./certificate.pdf" target="_blank" class="bg-slate-900 text-white px-5 py-3 rounded-full text-sm font-semibold text-center nav-item">View PDF →</a>
+<a href="https://certificates.ccbp.in/intensive/irc?id=MHI0R1EYT8" target="_blank" class="border border-slate-200 px-5 py-3 rounded-full text-sm font-semibold text-center nav-item">Verify ↗</a>
+</div>
+<p class="text-[10px] text-slate-400 mt-4 break-all">Verify at: https://certificates.ccbp.in/intensive/irc?id=MHI0R1EYT8</p>
+
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="tag">Python</span><span class="tag">Git</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">React</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="max-w-5xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-6">
+<div>
+<h2 class="text-3xl font-extrabold mb-6">🎓 Education</h2>
+<div class="space-y-4">
+<div class="card p-6" style="border-left:4px solid #2563eb"><p class="text-xs text-slate-500">2024 - 2025</p><h3 class="font-bold">CCBP 4.0 - MERN Full Stack</h3><p class="text-sm text-slate-600">NxtWave • Intensive Program</p></div>
+<div class="card p-6"><p class="text-xs text-slate-500">2021 - 2023</p><h3 class="font-bold">M.Com - Master of Commerce</h3></div>
+<div class="card p-6"><p class="text-xs text-slate-500">2017 - 2020</p><h3 class="font-bold">B.Com - Bachelor of Commerce</h3></div>
+</div>
+</div>
+<div>
+<h2 class="text-3xl font-extrabold mb-6">✨ Highlights</h2>
+<div class="card p-8 bg-slate-900 text-white">
+<h3 class="font-bold text-lg">Why Hire Me?</h3>
+<p class="text-slate-300 text-sm mt-3 leading-relaxed">MERN certified with real projects, 600+ hours coding, strong CS fundamentals from NxtWave CCBP 4.0. Ready to build production-grade apps.</p>
+<div class="mt-6 inline-block bg-white text-slate-900 px-4 py-1.5 rounded-full text-xs font-bold">AVAILABLE FOR WORK</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="max-w-5xl mx-auto px-6 py-16">
+<div class="card p-10 bg-slate-900 text-white flex flex-col md:flex-row justify-between gap-10 rounded-[24px]">
+<div><h2 class="text-5xl font-extrabold leading-[0.9]">Let's Work<br>Together.</h2><p class="text-slate-400 mt-4 max-w-sm">Available for Full Stack Developer roles. Let's build something great.</p></div>
+<div class="flex flex-col gap-3 md:w-[320px]">
+<a href="mailto:srinuparitala68@gmail.com" class="bg-white text-slate-900 p-4 rounded-xl font-semibold flex justify-between nav-item">srinuparitala68@gmail.com <span>→</span></a>
+<a href="https://github.com/srinuparitala99-jpg" target="_blank" class="border border-white/20 p-4 rounded-xl flex justify-between nav-item">GitHub <span>↗</span></a>
+<a href="https://www.linkedin.com/in/srinivasarao-paritala" target="_blank" class="border border-white/20 p-4 rounded-xl flex justify-between nav-item">LinkedIn <span>↗</span></a>
+</div>
+</div>
+<footer class="text-center text-slate-500 text-xs mt-10">© 2026 Paritala Srinivasarao — Designed & Developed by Me • All Rights Reserved</footer>
+</section>
+
+<script>
+// CURSOR
+const dot=document.getElementById('cursor-dot'),ring=document.getElementById('cursor-ring');
+document.addEventListener('mousemove',e=>{
+dot.style.transform=`translate(${e.clientX-4}px,${e.clientY-4}px)`;
+ring.style.transform=`translate(${e.clientX-21}px,${e.clientY-21}px)`;});
+document.querySelectorAll('a,.nav-item,.card,button').forEach(el=>{
+el.addEventListener('mouseenter',()=>document.body.classList.add('hovering'));
+el.addEventListener('mouseleave',()=>document.body.classList.remove('hovering'));});
+</script>
+</body>
+</html>
